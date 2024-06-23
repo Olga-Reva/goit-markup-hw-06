@@ -291,15 +291,14 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/main-image-mob@1x.jpg);
-  max-width: 320px;
+  /*max-width: 320px;*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #2e2f42;
   /*padding: 188px 0;*/
-  padding-top: 72px;
-  padding-bottom: 52px;
-  margin: 0 auto;
+  padding-bottom: 72px;
+  margin: auto;
   text-align: center;
 }
 
@@ -329,35 +328,23 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin: 0px auto;
-  margin-bottom: 48px;
+  padding: 72px 52px;
 }
 
 .hero-btn {
-  border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  width: 169px;
-  height: 56px;
   display: block;
   margin: 0 auto;
-  min-width: 169px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -957,7 +944,7 @@ img {
 /*------------------ADAPTIVE TABLET----------------------*/
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 768px;
   }
   /*---------HEADER TABLET----------*/
   .header {
@@ -986,6 +973,31 @@ img {
     display: none;
   }
   /*---------HERO TABLET----------*/
+
+  .header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /*---------HERO TABLET----------*/
+  .container-hero {
+    padding: 0;
+  }
+  .hero-title {
+    max-width: 768px;
+    font-size: 56px;
+    line-height: 1.07;
+    padding-top: 112px;
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+
+  .hero {
+    padding-bottom: 112px;
+  }
+
+  /*-------------------*/
   .future-list {
     gap: 24px 72px;
   }
@@ -1009,14 +1021,12 @@ img {
 /*----------------------------------------------------*/
 
 /*------------------ADAPTIVE DESKTOP----------------------*/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1440px;
   }
 
-  /*---------HEADER TABLET----------*/
+  /*---------HEADER DESKTOP----------*/
   .header-address-list {
     display: flex;
     flex-direction: row;
@@ -1027,7 +1037,19 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-  /*---------HERO TABLET----------*/
+  /*---------HERO DESKTOP----------*/
+  .hero-title {
+    max-width: 1440px;
+    letter-spacing: 0.02em;
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
+  }
+
+  .hero {
+    padding-bottom: 188px;
+  }
+  /*------------------------*/
 
   .future {
     padding-top: 120px;
