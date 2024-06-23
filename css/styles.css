@@ -142,6 +142,15 @@ img {
   display: block;
   bottom: -1px;
 }
+
+.menu-open-btn {
+  border: none;
+  background-color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: auto;
+}
+
 /*--------------------------------------------*/
 
 /*------------------MOB HEADER----------------------*/
@@ -153,9 +162,9 @@ img {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  /*visibility: hidden;
+  visibility: hidden;
   opacity: 0;
-  pointer-events: none;*/
+  pointer-events: none;
   padding: 72px 24px 40px 16px;
   display: flex;
   flex-direction: column;
@@ -948,9 +957,35 @@ img {
 /*------------------ADAPTIVE TABLET----------------------*/
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
+  }
+  /*---------HEADER TABLET----------*/
+  .header {
+    padding: 0;
   }
 
+  .header-menu-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-address-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+  /*---------HERO TABLET----------*/
   .future-list {
     gap: 24px 72px;
   }
@@ -980,6 +1015,19 @@ img {
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  /*---------HEADER TABLET----------*/
+  .header-address-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  /*---------HERO TABLET----------*/
 
   .future {
     padding-top: 120px;
