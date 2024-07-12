@@ -31,7 +31,7 @@ button {
 }
 
 .container {
-  width: 320px;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -321,8 +321,6 @@ img {
 }*/
 
 .hero-title {
-  max-width: 320px;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -338,7 +336,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  text-align: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   border: none;
@@ -944,7 +941,7 @@ img {
 /*------------------ADAPTIVE TABLET----------------------*/
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 
   /*---------HEADER TABLET----------*/
@@ -976,7 +973,7 @@ img {
   /*---------HERO TABLET----------*/
 
   .hero {
-    max-width: 768px;
+    min-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -996,13 +993,12 @@ img {
     }
   }
 
-  .header-address-link {
+  /*.header-address-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
+  }*/
 
-  /*---------HERO TABLET----------*/
   .container-hero {
     padding: 0;
   }
@@ -1011,16 +1007,14 @@ img {
     width: 768px;
     font-size: 56px;
     line-height: 1.07;
-    padding-top: 112px;
-    padding-left: 136px;
-    padding-right: 136px;
+    padding: 112px 136px 36px 136px;
   }
 
   .hero {
     padding-bottom: 112px;
   }
 
-  /*-------------------*/
+  /*-----------------------------------------*/
   .future-list {
     gap: 24px 72px;
   }
@@ -1045,7 +1039,7 @@ img {
 /*------------------ADAPTIVE DESKTOP----------------------*/
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
+    max-width: 1440px;
   }
 
   /*---------HEADER DESKTOP----------*/
