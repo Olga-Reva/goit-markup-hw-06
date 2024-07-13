@@ -993,12 +993,6 @@ img {
     }
   }
 
-  /*.header-address-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }*/
-
   .container-hero {
     padding: 0;
   }
@@ -1015,34 +1009,41 @@ img {
   }
 
   /*-----------------------------------------*/
+
+  /*--------------FUTURE TABLET--------------*/
   .future-list {
-    gap: 24px 72px;
+    gap: 72px 24px;
   }
 
   .future-item {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .future-subtitle {
     text-align: left;
   }
 
+  /*-----------------------------------------*/
+
+  /*--------------TEAM TABLET--------------*/
   .team-list {
     gap: 24px;
   }
-  .team-item {
+  * .team-item {
     width: 24px 64px;
   }
 }
 /*----------------------------------------------------*/
 
 /*------------------ADAPTIVE DESKTOP----------------------*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1128px) {
   .container {
-    max-width: 1440px;
+    max-width: 1128px;
   }
 
-  /*---------HEADER DESKTOP----------*/
+  /*----------------------------------------------------*/
+
+  /*---------HEADER DESKTOP------------------*/
   .header-address-list {
     display: flex;
     flex-direction: row;
@@ -1053,13 +1054,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
-  /*---------HERO DESKTOP----------*/
+
+  /*----------------------------------------------------*/
+
+  /*---------HERO DESKTOP--------------------*/
   .hero-title {
-    width: 1440px;
+    width: 1128px;
     letter-spacing: 0.02em;
-    padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
+    padding: 188px 316px 48px 316px;
   }
 
   .hero {
@@ -1083,7 +1085,7 @@ img {
         url(../images/main-image@2x.jpg);
     }
   }
-  /*------------------------*/
+  /*-------------FUTURE DESKTOP-----------*/
 
   .future {
     padding-top: 120px;
@@ -1102,7 +1104,8 @@ img {
   .future-icons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-content: space-around;
     width: 264px;
     height: 112px;
     border: 1px solid #8e8f99;
@@ -1127,6 +1130,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-weight: 400;
+    width: 264px;
   }
 
   .team {
