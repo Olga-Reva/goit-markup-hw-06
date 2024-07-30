@@ -314,12 +314,6 @@ img {
   }
 }
 
-/*.container-hero {
-  width: 1158px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}*/
-
 .hero-title {
   font-size: 36px;
   line-height: 1.11;
@@ -587,7 +581,6 @@ img {
   text-transform: uppercase;
   margin-bottom: 16px;
   color: #4d5ae5;
-  /*display: inline-block;*/
   display: flex;
   justify-content: center;
   width: 288px;
@@ -623,8 +616,6 @@ img {
 
 .footer-social-list {
   display: flex;
-  /*justify-content: flex-start;
-  align-items: flex-end;*/
   justify-content: center;
   gap: 16px;
 }
@@ -650,8 +641,6 @@ img {
 .footer-botton {
   display: flex;
   flex-direction: column;
-  /*align-items: center;
-  margin: 0 auto;*/
 }
 
 .footer-form-wrap {
@@ -663,7 +652,6 @@ img {
   width: 288px;
   height: 40px;
   background-color: transparent;
-  /*padding-left: 16px;*/
   margin-bottom: 16px;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -1047,13 +1035,10 @@ img {
     display: flex;
     padding-left: 108px;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
-    /*padding: 24px;*/
   }
 
   .footer-container-first {
     display: flex;
-    /*flex-direction: space-between;*/
     gap: 24px;
   }
 
@@ -1090,8 +1075,6 @@ img {
   .footer-botton {
     display: flex;
     flex-direction: column;
-    /*align-items: center;
-  margin: 0 auto;*/
   }
 
   .footer-input {
@@ -1170,7 +1153,6 @@ img {
   .future-icons {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
     justify-content: space-around;
     width: 264px;
     height: 112px;
